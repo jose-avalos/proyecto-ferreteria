@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/suministros-ferreteros"/>
+<Context antiJARLocking="true" path="/suministros-ferreteros" crossContext="true" debug="5" reloadable="true">
+<Logger className="org.apache.catalina.logger.FileLogger" prefix="localhost_." suffix=".txt" timestamp="true"/>
+<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" name="jdbc/mysql" password="root"  username="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/ferreteria"/>
+</Context>
+
